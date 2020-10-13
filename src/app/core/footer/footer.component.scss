@@ -1,0 +1,58 @@
+@import "../../../variables.scss";
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    height:75px;
+    width:100vw;
+    display:flex;
+    flex-direction: row;
+    list-style:none;
+}
+
+.footer li {
+    align-self:flex-end;
+    height:75px;
+    width:50px;
+    flex:1;
+    text-align:center;
+}
+
+.footer li mat-icon {
+    height:75px;
+    width:50px;
+    margin:auto;
+    line-height:75px;
+    font-size:32px;
+    color:white;
+    cursor: pointer;
+    // background-color:red;
+}
+
+.svg-container {
+    height:75px;
+    width:50px;
+    margin:auto;
+    // background-color:green;
+}
+
+svg {
+    margin-top:23px;
+    fill:white;
+    cursor: pointer;
+    // background-color:red;
+}
+
+svg:hover {
+    fill:$PURPLE;
+}
+
+.footer li mat-icon:hover {
+    color:$PURPLE;
+    
+}
+
+.footer-spacer {
+    flex:20;
+}

@@ -1,0 +1,24 @@
+<div class="logo-container">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
+        x="0px" y="0px" width="1640px" height="852px" viewBox="0 0 1640 852" enable-background="new 0 0 1640 852"
+        xml:space="preserve" class="logo">
+        <text transform="matrix(1 0 0 1 30.7217 443.0752)" fill="#FFFFFF" font-family="'Pondspell'"
+            font-size="506.322">Whats</text>
+        <text transform="matrix(1 0 0 1 787.334 712.5586)" fill="#FFFFFF" font-family="'Pondspell'"
+            font-size="506.322">Goood</text>
+    </svg>
+</div>
+
+<div class="card-container">
+    <div *ngFor="let rating of ratings" class="card" [ngClass]="getCardColor(rating.rating)"
+        (click)="toggleDialog(rating)">
+        <img class="card-icon" src="{{getSvglocation(rating.name)}}" />
+    </div>
+</div>
+
+<div class="weather-container">
+    <iframe class="windy"
+        src="https://embed.windy.com/embed2.html?lat=-37.120&lon=18.413&detailLat=-33.816&detailLon=18.470&width=800&height=400&zoom=10&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=kt&metricTemp=%C2%B0C&radarRange=-1"
+        frameborder="0">
+    </iframe>
+</div>
