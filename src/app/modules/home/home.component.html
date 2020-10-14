@@ -5,7 +5,13 @@
 <div class="card-container">
     <div *ngFor="let rating of ratings" class="card" [ngClass]="getCardColor(rating.rating)"
         (click)="toggleDialog(rating)">
-        <img class="card-icon" src="{{getSvglocation(rating.name)}}" />
+        <img class="card-icon" src="{{getSvgLocation(rating.name)}}" />
+
+        <div class="star-container">
+            <img *ngFor="let i of getStars(rating.rating)" src="../../../assets/star.svg" class="star">
+        </div>
+
+        <span class="card-text">{{rating.name}}</span>
     </div>
 </div>
 

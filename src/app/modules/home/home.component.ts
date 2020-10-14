@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { HomeModule } from './home.module'
-import { CardModalComponent } from '../card-modal/card-modal.component'
+import { CardModalComponent } from '../../core/components/card-modal/card-modal.component'
 import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 
 @Component({
@@ -20,6 +20,26 @@ export class HomeComponent implements OnInit {
     }
 
     ngOnInit(): void {
+    }
+
+    public toggleDialog(rating) {
+        this.openDialog(rating)
+    }
+
+    public openDialog(rating) {
+
+        const dialogConfig = new MatDialogConfig();
+
+        dialogConfig.disableClose = true;
+        dialogConfig.autoFocus = true;
+
+        dialogConfig.data = rating;
+
+        this.dialogRef = this.dialog.open(CardModalComponent, dialogConfig);
+
+        this.dialogRef.afterClosed().subscribe(result => {
+            console.log("closed")
+        })
     }
 
     public getCards() {
@@ -214,28 +234,7 @@ export class HomeComponent implements OnInit {
         ]
     }
 
-    public toggleDialog(rating) {
-        this.openDialog()
-    }
-
-    public openDialog() {
-
-        const dialogConfig = new MatDialogConfig();
-
-        dialogConfig.disableClose = true;
-        dialogConfig.autoFocus = true;
-
-        dialogConfig.data = {};
-
-        this.dialogRef = this.dialog.open(CardModalComponent, dialogConfig);
-
-        this.dialogRef.afterClosed().subscribe(result => {
-            console.log("closed")
-        })
-    }
-
-
-    public getSvglocation(name) {
+    public getSvgLocation(name) {
         var svgLocationMap = {
             "Kiting": "../../../../assets/kite.svg",
             "Surfing": "../../../../assets/surfing.svg",
@@ -254,5 +253,13 @@ export class HomeComponent implements OnInit {
         } else {
             return "bad"
         }
+    }
+
+    public getStars(rating) {
+        var arr = []
+        for (var i = 0; i < Math.round(rating * 5); i++){
+            arr.push(i)
+        }
+        return arr
     }
 }

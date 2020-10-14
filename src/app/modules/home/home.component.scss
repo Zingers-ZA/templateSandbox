@@ -29,19 +29,66 @@
     height:110px;
     margin:20px 60px;
     border-radius: 8px;
+    display:flex;
+    flex-direction: column;
     background-color:grey;
-    cursor:pointer;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.08),
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    height: 130px;
+    margin: 10px 60px;
+}
+
+.card-text {
+    font-family: Helvetica, sans-serif;
+    opacity: 0;
+    transition: all 0.3s;
+    margin-bottom:5px;
+}
+
+.card:hover .card-text {
+    opacity: 1;
 }
 
 .card-icon {
     width:50px;
     height:50px;
-    margin:25px 85px;
-    
+    margin:15px 85px 5px 85px;
+}
+
+.star-container {
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+}
+
+.star {
+    height:20px;
+    height:20px;
+}
+
+.path {
+     //we divide the line in multiple dashes (some full and other empty)
+   //these dashes have 1000px in length
+   //so there are one dash full of 1000px of length and then one dash empty of 1000px of length and so on and so forth
+   stroke-dasharray: 1000;
+
+   //we change the position of the dashes
+   stroke-dashoffset: 1000;
+
+   //now we animate the dashoffset
+   //we reduce the offset of each dash so we have the impression that the dashes are moving
+   animation: dash 1s linear forwards;
+}
+
+@keyframes dash {
+   to {
+      stroke-dashoffset: 0;
+   }
 }
 
 .good {
@@ -61,6 +108,7 @@
     max-width:1600px;
     min-height:400px;
     margin:auto;
+    margin-bottom: 50px;
     display:flex;
     flex-direction: row;
     justify-content: center;

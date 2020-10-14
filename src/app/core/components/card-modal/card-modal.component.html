@@ -1,0 +1,19 @@
+
+<div class="modal-container" [ngClass]="getColor()">
+    <div class="close-container">
+        <mat-icon class="close" (click)="close()">close</mat-icon>
+    </div>
+    
+    <div class="header-text">{{rating.name}}</div>
+
+    <div class="summary-text">{{rating.context.summary}}</div>
+    
+    <div class="rating-text-overall">{{getRatingText(rating.rating)}}</div>
+
+    <div class="rating-info" *ngFor="let key of contextKeys">
+        <div class="key">{{getSentenceCase(key)}}:</div>
+        <div class="value">{{rating.context.idvRatings[key].value}}{{unitsMap[key]}}</div>
+        <div class="description">{{rating.context.idvRatings[key].Description}}</div>
+    </div>
+    
+</div>

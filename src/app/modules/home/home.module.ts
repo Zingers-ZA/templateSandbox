@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { SharedModule } from '../../core/modules/shared/shared.module'
 import { MatIconModule } from '@angular/material/icon'
 
+
 @NgModule({
   declarations: [HomeComponent],
   imports: [

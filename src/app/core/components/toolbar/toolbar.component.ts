@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedModule } from '../modules/shared/shared.module'
+import { SharedModule } from '../../modules/shared/shared.module'
 
 
 @Component({

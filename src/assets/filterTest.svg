@@ -1,0 +1,63 @@
+<!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1465.573px" height="288.524px" viewBox="0 0 1465.573 288.524" enable-background="new 0 0 1465.573 288.524" xml:space="preserve">
+
+    <defs>
+        <filter id="fillpartial" primitiveUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+            <feFlood x="0%" y="0%" width="100%" height="100%" flood-color="#000000" />
+            <feOffset dx="-0.3">
+                <animate attributeName="dx" from="-1" to="-0.3" dur="0.7s" />
+            </feOffset>
+            <feComposite operator="in" in2="SourceGraphic" />
+            <feComposite operator="over" in2="SourceGraphic" />
+        </filter>
+    </defs>
+
+    <defs>
+        <linearGradient id="lightGradient">
+            <stop offset="0%" stop-color="red">
+                <animate attributeName="stop-color" values="black; red" dur="1s" fill="freeze" /> 
+            </stop>
+            <stop offset="100%" stop-color="black">
+                <animate attributeName="stop-color" values="black; red" dur="1s" fill="freeze" begin="1s"/> 
+            </stop>
+        </linearGradient>
+    </defs>
+
+
+    <g fill="url(#lightGradient)">
+        <polygon  stroke-width="2" stroke-miterlimit="10" points="1014.655,39.646 1049.941,111.144 
+        1128.844,122.609 1071.749,178.262 1085.228,256.846 1014.655,219.743 944.083,256.846 957.562,178.262 900.467,122.609 
+        979.369,111.144 " />
+        <polygon  stroke-width="2" stroke-miterlimit="10" points="723.295,39.647 758.581,111.143 
+        837.483,122.61 780.389,178.262 793.867,256.846 723.295,219.742 652.723,256.846 666.201,178.262 609.106,122.61 688.009,111.143 
+        " />
+        <polygon  stroke-width="2" stroke-miterlimit="10" points="434.771,39.646 470.057,111.144 
+        548.959,122.609 491.865,178.262 505.343,256.846 434.771,219.743 364.199,256.846 377.677,178.262 320.583,122.609 
+        399.485,111.144 " />
+        <polygon  stroke-width="2" stroke-miterlimit="10" points="152.361,39.646 187.647,111.144 
+        266.549,122.609 209.455,178.262 222.933,256.846 152.361,219.744 81.789,256.846 95.267,178.262 38.172,122.609 117.075,111.144 
+        " />
+        <polygon  stroke-width="2" stroke-miterlimit="10" points="1302.541,39.646 1337.827,111.144 
+        1416.729,122.609 1359.635,178.262 1373.113,256.846 1302.541,219.742 1231.969,256.846 1245.447,178.262 1188.353,122.609 
+        1267.255,111.144 " />
+    </g>
+</svg> -->
+
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1465.573px" height="288.524px" viewBox="0 0 1465.573 288.524" enable-background="new 0 0 1465.573 288.524"
+     xml:space="preserve">
+     
+<path class="path"  fill="url(#lightGradient)" stroke="#FFFFFF" stroke-width="15" stroke-miterlimit="10" d="M1014.655,39.646l35.286,71.497l78.902,11.466
+	l-57.095,55.652l13.479,78.584l-70.572-37.103l-70.572,37.103l13.479-78.584l-57.095-55.652l78.902-11.466L1014.655,39.646z
+	 M688.009,111.143l-78.902,11.467l57.095,55.652l-13.479,78.584l70.572-37.104l70.572,37.104l-13.479-78.584l57.095-55.652
+	l-78.902-11.467l-35.286-71.496L688.009,111.143z M399.485,111.144l-78.902,11.466l57.095,55.652l-13.479,78.584l70.572-37.103
+	l70.572,37.103l-13.479-78.584l57.095-55.652l-78.902-11.466l-35.286-71.497L399.485,111.144z M117.075,111.144l-78.902,11.466
+	l57.095,55.652l-13.479,78.584l70.572-37.102l70.572,37.102l-13.479-78.584l57.095-55.652l-78.902-11.466l-35.286-71.497
+	L117.075,111.144z M1267.255,111.144l-78.902,11.466l57.095,55.652l-13.479,78.584l70.572-37.104l70.572,37.104l-13.479-78.584
+	l57.095-55.652l-78.902-11.466l-35.286-71.497L1267.255,111.144z"/>
+</svg>
+
+<!-- <svg viewBox="0 0 160 160" width="160" height="160">
+    
+    <circle cx="80" cy="80" r="50" fill="url(#lightGradient)"/>
+</svg> -->
