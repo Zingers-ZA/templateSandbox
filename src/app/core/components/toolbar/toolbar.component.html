@@ -1,5 +1,7 @@
 <div class="toolbar">
-    <li class="hamburger">
-        <mat-icon>menu</mat-icon>
+    <li class="hamburger" [ngClass]="{'darken': menuExpanded}">
+        <mat-icon (click)="toggleMenu()">menu</mat-icon>
     </li>
 </div>
+
+<app-menu *ngIf="this.menuExpanded"></app-menu>

@@ -1,0 +1,35 @@
+@import "../../../../variables.scss";
+
+.menu-container {
+    position: fixed;
+    right:0px;
+    top:50px;
+    width:300px;
+    border-radius: 5px;
+    background-color:#292929
+}
+
+.logo {
+    width:100px;
+    height:50px;
+    margin: auto;
+}
+
+.menu-list {
+    margin: 0px 5px;
+    color:white;
+    font-family: Helvetica, sans-serif;
+    list-style: none;
+}
+
+.menu-list li {
+    padding: 15px 10px;
+    border-bottom-style: solid;
+    border-bottom-width:1px;
+    border-color: #333;
+    cursor: pointer;
+}
+
+.menu-list li:hover {
+    color: $PURPLE;
+}

@@ -9,9 +9,15 @@ import { SharedModule } from '../../modules/shared/shared.module'
 })
 export class ToolbarComponent implements OnInit {
 
+  public menuExpanded = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleMenu(){
+    this.menuExpanded = !this.menuExpanded
   }
 
 }

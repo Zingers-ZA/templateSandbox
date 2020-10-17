@@ -21,7 +21,13 @@
     width:50px;
     position:fixed;
     right:10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     cursor: pointer;
+}
+
+.darken {
+    background-color: #292929;
 }
 
 .hamburger :hover{
